@@ -6,6 +6,4 @@ public interface WizardInterface {
 	
 	public String changeDress();
 
-	public void setOutfit(Outfit myOutfit);
-
 }

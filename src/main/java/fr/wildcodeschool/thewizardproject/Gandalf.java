@@ -1,8 +1,17 @@
 package fr.wildcodeschool.thewizardproject;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component("gandalf")
 public class Gandalf implements WizardInterface {
 	
 	private Outfit myOutfit;
+	
+	@Autowired
+	public Gandalf(Outfit theOutfit) {
+		myOutfit = theOutfit;
+	};
 
 	@Override
 	public String giveAdvice() {
@@ -15,10 +24,5 @@ public class Gandalf implements WizardInterface {
 		// TODO Auto-generated method stub
 		return this.myOutfit.getDressColor("gray");
 	}
-	
-	public void setOutfit(Outfit theOutfit) {
-		myOutfit = theOutfit;
-	}
-	
 
 }

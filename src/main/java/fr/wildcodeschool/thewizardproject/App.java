@@ -12,8 +12,6 @@ public class App {
 		System.out.println("********************");
 		System.out.println(myWizard.giveAdvice());
 		System.out.println("********************");
-		Outfit myOutfit = new Outfit();
-		myWizard.setOutfit(myOutfit);
 		System.out.println(myWizard.changeDress());
 		
 	}
